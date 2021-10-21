@@ -1,0 +1,6 @@
+
+
+SELECT count(*) FROM "movies"."firehose_thing_databucket_1m72ww3rfnlmg" WHERE col1 like 'The%';
+50
+
+
