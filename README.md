@@ -12,6 +12,8 @@ This example provides a working Firehose endpoint with IAM authentication offloa
 No configuration is required to launch the CloudFormation template `firehose.yml`. Once it's up and going look to the `ServiceEndpoint` to point your producer at.
 ### Producer
 
+RUN `deploy.sh` after you have added the `AWS credentials` to your terminal environment, and this should kick off a CloudFormation stack that you will use later when you run the bash script `producer.sh,` and that should fill up the S3 bucket with data from the movie cvs file.
+
 Within this repo includes sample data and a shell script that will submit all of the records to the API Gateway address. Ensure that your AWS credentials are configured. Update the `STACK_NAME` and `REGION` values to match where you've launch the `firehose.yml` cloudformation template within `producer.sh`. Then run the shell script to send over the contents of `data/moviedata2.csv` to the firehose.
 
 This will take a while as it sequentially posts each record one by one.
