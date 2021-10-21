@@ -53,3 +53,11 @@ Activities within Athena Movie Dataset
 * What movie has the lowest rating score
 * Which movie has the longest plot description?
 * Which year has the most movies?
+
+MySQL Commands used. These
+
+* SELECT * FROM "movies"."firehose_thing_databucket_yrryghds7frk" where col2=(select min(col2) from "movies"."firehose_thing_databucket_yrryghds7frk")
+* SELECT * FROM "movies"."firehose_thing_databucket_3vsxwrn106rv" where col1 like 'The%'
+* SELECT * FROM "movies"."firehose_thing_databucket_1fgwlefnay9n1" ORDER BY LENGTH(col3) DESC LIMIT 1;
+* SELECT * FROM "movies"."firehose_thing_databucket_yrryghds7frk" where length(col3)=(select max(length(col3)) from "movies"."firehose_thing_databucket_yrryghds7frk")
+* SELECT col0, COUNT(col0) AS "value_occurrence" FROM "movies"."firehose_thing_databucket_usg8zb7hamxj" GROUP BY col0 ORDER BY "value_occurrence" DESC LIMIT 1;
