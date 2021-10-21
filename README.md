@@ -47,6 +47,7 @@ Glue's schema should be visible within AWS Athena web console look in the drop d
 Note your table database and table name make up the source and where the SQL `FROM` is targeting within the query. Yours will be unique to your account.
 
 Activities within Athena Movie Dataset
+
 * How many movies begin with “The”
 * What is the average rating of all of the movies
 * What movie has the lowest rating score
