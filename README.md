@@ -54,6 +54,7 @@ Activities within Athena Movie Dataset
 * Which movie has the longest plot description?
 * Which year has the most movies?
 
+
 MySQL Commands used. These
 
 * SELECT * FROM "movies"."firehose_thing_databucket_yrryghds7frk" where col2=(select min(col2) from "movies"."firehose_thing_databucket_yrryghds7frk")
